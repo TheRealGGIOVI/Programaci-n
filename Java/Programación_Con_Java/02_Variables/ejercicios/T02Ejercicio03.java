@@ -4,7 +4,7 @@
  * 
  * @author Giovanni Giove
 */
-public class Ejercicio03 {
+public class T02Ejercicio03 {
   public static void main(String[] args) {
     String nombre1;
     String direccion;

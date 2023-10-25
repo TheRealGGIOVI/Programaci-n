@@ -8,7 +8,7 @@
 /**
  * Ejercicio02
  */
-public class Ejercicio02 {
+public class T02Ejercicio02 {
 public static void main(String[] args) {
     String nombre;
     nombre = "Giovanni Giove Meschian";

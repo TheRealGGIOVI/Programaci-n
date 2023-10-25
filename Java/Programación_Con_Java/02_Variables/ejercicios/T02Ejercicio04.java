@@ -4,10 +4,10 @@
  * 
  * @author Giovanni Giove
 */
-public class Ejercicio04 {
+public class T02Ejercicio04 {
   public static void main(String[] args) {
-    double euros = 8;
-    double pesetas = (double) euros * 166.386;
+    double euros = 6;
+    int pesetas = (int) (euros * 166.386);
     System.out.println(euros +" euros equivales a " +pesetas + " pesetas");
   }
 }

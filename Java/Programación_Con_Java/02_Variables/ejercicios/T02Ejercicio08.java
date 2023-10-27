@@ -10,6 +10,7 @@ public class T02Ejercicio08 {
     char letra3 = 'R';
     char letra4 = 'R';
     char letra5 = 'O';
-    System.out.println("" +letra1 +letra2 +letra3 +letra4 +letra5);
+    String cadena = "" +letra1 +letra2 +letra3 +letra4 +letra5;
+    System.out.println(cadena);
   }
 }

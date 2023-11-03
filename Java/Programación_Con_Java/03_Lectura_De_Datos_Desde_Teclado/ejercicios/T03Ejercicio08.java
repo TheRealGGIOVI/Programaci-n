@@ -14,7 +14,7 @@ public class T03Ejercicio08 {
     System.out.println("¿Cuantas horas a la semana trabajas? ");
     int horas = sc.nextInt();
 
-    System.out.println("Tu salario semanal será de: " +(horas*12) +" euros");
+    System.out.printf("Tu salario semanal será de: %.2f euros\n", (double)(horas*12));
 
     sc.close();
   }

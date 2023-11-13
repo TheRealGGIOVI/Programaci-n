@@ -13,7 +13,11 @@ public class T04Ejercicio19 {
 
     int digitos = String.valueOf(Math.abs(numero)).length();
 
-    System.out.println("El número tiene " + digitos + " dígito(s).");
+    if (digitos >= 6) {
+      System.out.println("El número introducido tiene más de 5 digitos");
+    } else {
+      System.out.println("El número tiene " + digitos + " dígitos.");
+    }
 
     sc.close();
   }

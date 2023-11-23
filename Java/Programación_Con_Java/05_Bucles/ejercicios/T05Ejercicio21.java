@@ -7,33 +7,38 @@ import java.util.Scanner;
 public class T05Ejercicio21 {
  public static void main(String[] args) {
   Scanner sc = new Scanner(System.in);
-  int numIntroducidos = 0;
-  int numPares = 0;
-  int numImpares = 0;
-  int contador = 0;
-  int pares = 0;
-  int impares = 0;
+  int contadorNumeros = 0;
+    int contadorImpares = 0;
+    int sumaImpares = 0;
+    int maximoPares = 0;
+    int numeroIntroducido;
+    // double mediaImpares = 0;
+    
+    System.out.println("Por favor, vaya introduciendo números enteros.");
+    System.out.println("Puede terminar mediante la introducción de un número negativo.");
 
-  while (numIntroducidos >= 0) {
-    System.out.print("Introduzca un número: ");
-    numIntroducidos = sc.nextInt();
+    do {
+      numeroIntroducido = sc.nextInt();
+      if (numeroIntroducido >= 0) {
+        contadorNumeros++;
+        if (numeroIntroducido % 2 == 1) {     //Si es número impar
+          contadorImpares++;
+          sumaImpares += numeroIntroducido;
+        } else {                              //Si no es impar, será par
+          if (numeroIntroducido > maximoPares) {
+            maximoPares = numeroIntroducido;
+          }
+        }
+      }
+    } while (numeroIntroducido >= 0);
+    
+    // double mediaImpares = sumaImpares/contadorImpares;
+    sc.close();
+    System.out.println("Ha introducido " + contadorNumeros + " números.");
+    System.out.printf("La media de los numero impares es %.2f.\n", (double) sumaImpares/contadorImpares);
+    // System.out.printf("La media de los numero impares es %.2f.\n", mediaImpares);
+    System.out.println("El máximo de los números pares es " + maximoPares + ".");
 
-    contador += 1;
-
-    if (numIntroducidos % 2 == 0) {
-      pares += numIntroducidos;  
-      numPares ++;
-    }
-
-    if (numIntroducidos % 2 != 0) {
-      impares += numIntroducidos;
-      numImpares ++;
-    }
-
-  }
-
-  System.out.println("Se han introducido un total de " +contador + " números");
-  System.out.println("La media de los números impares introducidos es: " +(double)(impares/numImpares));
-  System.out.println("El número par más grande introducido es: ");
+    sc.close();
  } 
 }

@@ -21,7 +21,7 @@ public class T05Ejercicio32 {
     System.out.print("Dígitos pares: ");
 
     for (int i = 0; i < numeroCifras; i++) {
-      digito = (int) (numeroVolteado % 10);
+      digito = (int)  (numeroVolteado % 10);   // (int) es para pasar el Long de numeroVolteado a in, es decir para castearlo
       //Una vez tomada la cifra, vemos si es par haciendo la operacion MOD 2
       if (digito % 2 == 0) {
         System.out.print(digito + " ");   // Muestra los dígitos pares

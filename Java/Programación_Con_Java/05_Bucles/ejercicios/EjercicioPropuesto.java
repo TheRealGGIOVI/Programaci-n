@@ -14,14 +14,14 @@ public class EjercicioPropuesto {
     char caracter = sc.nextLine().charAt(0);
 
     
-    System.out.println("Introduce números enteros (>= 0). Introduce un número negativo para finalizar:");
+    int numero = 0;
+    System.out.println("Introduce números enteros (>= 0). Introduce un número negativo para finalizar: ");
 
-    
     System.out.println("Tabla:");
 
     
     System.out.println("Número\t\tCarácter");
-    int numero = 0;
+    
 
     boolean continuar = true;
     while (continuar) {
@@ -34,6 +34,8 @@ public class EjercicioPropuesto {
 
         
         numero = sc.nextInt();
+        
+        // numero = sc.nextInt();
 
         
         if (numero < 0) {

@@ -6,7 +6,7 @@ public class T07Eiercicio05 {
     int maximo = Integer.MIN_VALUE;
     int minimo = Integer.MAX_VALUE;
 
-    System.out.println("Introduzca número eteros y pulse INTRO: ");
+    System.out.println("Introduzca número enteros y pulse INTRO: ");
 
     for (int i = 0; i < numero.length; i++) {
       numero[i] = Integer.parseInt(System.console().readLine());
@@ -20,6 +20,7 @@ public class T07Eiercicio05 {
       }
     }
 
+    System.out.println("Tus números son: ");
     for (int i = 0; i < numero.length; i++) {
       System.out.print(numero[i] + " ");
       if (numero[i] == maximo) {

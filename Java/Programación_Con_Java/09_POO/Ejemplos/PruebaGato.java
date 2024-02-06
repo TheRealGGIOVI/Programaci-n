@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import Ejercicio3herencias.Gato;
+
 public class PruebaGato {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);

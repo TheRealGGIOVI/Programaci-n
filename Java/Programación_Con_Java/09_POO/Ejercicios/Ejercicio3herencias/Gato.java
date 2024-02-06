@@ -1,12 +1,8 @@
-public class Gato {
+package Ejercicio3herencias;
+public class Gato extends Mamifero {
   
-  //Atributos
-  String nombre;
-  String color;
-  String raza;
-  String sexo;
-  int edad;
-  double peso;
+ 
+  
 
 
   ////////Constructores
@@ -34,13 +30,7 @@ public class Gato {
     System.out.println("Brrrrrrrr");
   }
 
-  void come(String comida) {
-    if (comida.equalsIgnoreCase("Pescado")) {
-      System.out.println("Ñam Ñam");
-    } else {
-      System.out.println("Soy un gato y solo como pescado");
-    }
-  }
+  
 
  /**
   * 

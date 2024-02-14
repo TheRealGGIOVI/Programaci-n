@@ -45,7 +45,7 @@ public class Quiniela {
       }
 
       System.out.println("\nNúmero de aciertos:");
-      for (int i = 0; i < 3; i++) {
+      for (int i = 0; i < quiniela[i].length; i++) {
           System.out.println("Apuesta " + (i + 1) + ": " + aciertos[i] + " aciertos");
           if (aciertos[i] >= 10) {
             System.out.println("¡Enhorabuena! Has sido premiado con la apuesta " + (i + 1) + ".");

@@ -21,7 +21,7 @@ public class MainJuegoDelSiete {
 
     Scanner sc = new Scanner(System.in);
     Baraja baraja = new Baraja();
-    Jugador jugador = new Jugador(100.00); // Saldo con el que comienza el player
+    Jugador jugador = new Jugador(100.00); // Saldo con el que comienza el jugador
 
     while (true) {
       System.out.println(

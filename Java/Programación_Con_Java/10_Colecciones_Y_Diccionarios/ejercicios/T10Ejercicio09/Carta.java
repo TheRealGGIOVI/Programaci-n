@@ -8,10 +8,10 @@
  */
 public class Carta implements Comparable<Carta>{
   private static String[] p = {"Oros", "Bastos", "Espadas", "Copas"};
-  private static String[] n = {"As", "2", "3", "4", "5", "6", "7", "Sota", "Caballo", "Rey"};
+  private static int[] n = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
-  private String palo;
-  private String valor;
+  String palo;
+  int valor;
 
   public Carta(){
     this.palo = p[(int)(Math.random()*2)];
@@ -22,7 +22,7 @@ public class Carta implements Comparable<Carta>{
     return palo;
   }
 
-  public String getValor() {
+  public int getValor() {
     return valor;
   }
 
@@ -38,19 +38,29 @@ public class Carta implements Comparable<Carta>{
     if (getClass() != obj.getClass())
       return false;
     Carta other = (Carta) obj;
-    if (!valor.equals(other.valor))
+    if (valor != (other.valor))
       return false;
     if (!palo.equals(other.palo))
       return false;
     return true;
   }
   
+  // @Override
+  // public int compareTo(Carta c) {
+  //   if (this.palo.equals(c.getPalo())) {
+  //     return this.valor.compareTo(c.getValor());
+  //   } else {
+  //     return this.palo.compareTo(c.getPalo());
+  //   }
+  // }
+
   @Override
   public int compareTo(Carta c) {
     if (this.palo.equals(c.getPalo())) {
-      return this.valor.compareTo(c.getValor());
+      return Integer.compare(this.valor, c.getValor());
     } else {
       return this.palo.compareTo(c.getPalo());
     }
   }
 }
+

@@ -62,5 +62,6 @@ public class Carta implements Comparable<Carta>{
       return this.palo.compareTo(c.getPalo());
     }
   }
+  
 }
 

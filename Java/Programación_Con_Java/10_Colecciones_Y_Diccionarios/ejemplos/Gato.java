@@ -33,4 +33,10 @@ public class Gato implements Comparable<Gato> {
   public boolean equals(Gato g) {
     return (this.nombre).equals(g.getNombre());
   }
+
+  @Override
+  public int compareTo(Gato o) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+  }
 }

@@ -1,3 +1,5 @@
+package T10Ejercicio09;
+
 /**
  * Ejercicio 9 Tema 10
  * Realiza un programa que escoja al azar 10 cartas de la baraja española

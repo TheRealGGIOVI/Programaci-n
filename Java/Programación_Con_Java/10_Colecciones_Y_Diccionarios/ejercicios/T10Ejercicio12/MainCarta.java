@@ -1,3 +1,5 @@
+package T10Ejercicio12;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 

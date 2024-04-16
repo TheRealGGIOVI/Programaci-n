@@ -15,7 +15,7 @@ public class Ejemplo02 {
       FileReader archivo = new FileReader("ficheros/numeros.txt");
       BufferedReader br = new BufferedReader(archivo);
       String linea = "0";
-      int numlineas = -1;   //Empezamos en -1 porque va a contar la última línra (null)
+      int numlineas = -1;   //Empezamos en -1 porque va a contar la última línea (null)
       double suma = 0;
 
       do {

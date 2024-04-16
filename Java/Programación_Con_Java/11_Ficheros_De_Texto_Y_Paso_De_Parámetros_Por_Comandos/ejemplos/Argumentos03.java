@@ -20,7 +20,7 @@ public class Argumentos03 {
 
     try {
       FileReader archivo = new FileReader(args[0]);
-      BufferedReader br = new BufferedReader(archivo);
+      BufferedReader br = new BufferedReader(archivo);  
       String linea = "0";
       int numlineas = -1;   //Empezamos en -1 porque va a contar la última lína (null)
       double suma = 0;

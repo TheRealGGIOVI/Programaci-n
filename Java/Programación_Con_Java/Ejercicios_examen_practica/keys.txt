@@ -1,3 +1,4 @@
-rojo
-azul
 perro
+rojo
+blanco
+azul

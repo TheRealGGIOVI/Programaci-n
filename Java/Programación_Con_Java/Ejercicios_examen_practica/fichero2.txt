@@ -1,3 +1,4 @@
-rojo-color
-azul-blue
 perro-dog
+rojo-cherry
+blanco-white
+azul-blue

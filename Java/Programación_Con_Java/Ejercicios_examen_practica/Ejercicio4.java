@@ -57,7 +57,7 @@ public class Ejercicio4 {
                         System.out.print("Introduce el nuevo valor para la clave " + clave + ": ");
                         valor = System.console().readLine();
                         hashMap.put(clave, valor);
-                        // Reescribir todo el archivo con los datos actualizados
+                    
                         bw = new BufferedWriter(new FileWriter("./fichero2.txt"));
                         for (Map.Entry<String, String> entry : hashMap.entrySet()) {
                             bw.write(entry.getKey() + "-" + entry.getValue());
@@ -70,7 +70,7 @@ public class Ejercicio4 {
                         clave = System.console().readLine();
                         if (hashMap.containsKey(clave)) {
                             hashMap.remove(clave);
-                            // Reescribir todo el archivo con los datos actualizados
+                            
                             bw = new BufferedWriter(new FileWriter("./fichero2.txt"));
                             for (Map.Entry<String, String> entry : hashMap.entrySet()) {
                                 bw.write(entry.getKey() + "-" + entry.getValue());

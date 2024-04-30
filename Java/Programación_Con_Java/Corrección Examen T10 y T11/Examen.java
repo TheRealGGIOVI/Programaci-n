@@ -10,15 +10,6 @@ import modules.Diccionario;
 public class Examen {
   public static void main(String[] args) {
     
-    if (args.length != 1) {
-      System.out.println("Uso del programa: Java Examen <nombre_archivo>");
-      System.exit(-1);
-    }
-    String nombreArchivo = args[0];
-    Diccionario diccionario = new Diccionario();
-    
-    //Cargamos el diccionario con el fichero de entrada por parámetro
-    diccionario.cargar(nombreArchivo);
 
     Scanner scanner = new Scanner(System.in);
     int opcion;
@@ -91,7 +82,7 @@ public class Examen {
           break;
 
         case 6:
-          diccionario.guardar(nombreArchivo);
+          // diccionario.guardar(nombreArchivo);
           break;
 
         case 7:

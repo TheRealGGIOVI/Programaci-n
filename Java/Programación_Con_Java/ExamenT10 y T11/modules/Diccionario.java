@@ -1,6 +1,7 @@
 package modules;
 
-// import java.util.ArrayList;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.io.*;
 
@@ -62,12 +63,12 @@ public class Diccionario implements DiccionarioInterface {
   public void cargar(String archivo) {
     //Lee el fichero que le introducimos por parámetro y nos añade el par de clave y valor correspondiente a nuestro HashMap
       try {
-      BufferedReader br = new BufferedReader(new FileReader(archivo = "./ExamenT10 Y T11/ingles.txt"));
+      BufferedReader br = new BufferedReader(new FileReader(archivo));
       String linea = "";
       do {
         if (linea != null) {
           linea = br.readLine();
-          String[] palabras = archivo.split(":");
+          String[] palabras = linea.split(":");
           almacen.put(palabras[0], palabras[1]);
         }
         br.close();
@@ -83,18 +84,20 @@ public class Diccionario implements DiccionarioInterface {
   public void guardar(String archivo) {
     //Lee todo nuestro HashMap y lo guarda en el archivo con el formato de: clave:valor
    try {
-    BufferedWriter br = new BufferedWriter(new FileWriter(archivo = "./ExamenT10 Y T11/ingles.txt"));
+    BufferedWriter br = new BufferedWriter(new FileWriter(archivo));
     br.write(almacen.keySet() + ":" +almacen.get(archivo));
     br.close();
    } catch (IOException ioe) {
-    System.out.println("No se ha encpntrado la ruta al archivo " +ioe.getMessage());
+    System.out.println("No se ha encontrado la ruta al archivo " +ioe.getMessage());
     }
   }
 
 
   public void ordenarAlfabeticamente() {
-    // ArrayList<String> claves = new ArrayList<String>();
-
+    ArrayList<String> claves = new ArrayList<String>(almacen.keySet());
+    System.out.println("Diccionario orrdenado correctamente");
+    Collections.sort(claves);
+    
   }
 
 

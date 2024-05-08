@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [08/May/2024:20:52:56 +0200] "GET /provincias HTTP/1.1" 302 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:20:52:56 +0200] "GET /provincias/ HTTP/1.1" 404 973 http-bio-8080-exec-3 23
+0:0:0:0:0:0:0:1 - - [08/May/2024:20:52:56 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:00:37 +0200] "GET /provincias HTTP/1.1" 302 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:00:37 +0200] "GET /provincias/ HTTP/1.1" 404 973 http-bio-8080-exec-3 99
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:00:38 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:00:49 +0200] "GET /provincias HTTP/1.1" 302 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:00:49 +0200] "GET /provincias/ HTTP/1.1" 404 973 http-bio-8080-exec-8 12
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:00:49 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:01:03 +0200] "GET /provincias/ HTTP/1.1" 404 973 http-bio-8080-exec-2 12
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:01:18 +0200] "GET /provincias HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:01:18 +0200] "GET /provincias/ HTTP/1.1" 404 973 http-bio-8080-exec-1 3
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:01:23 +0200] "GET /provincia/ HTTP/1.1" 404 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:01:25 +0200] "GET /provincia/ HTTP/1.1" 404 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [08/May/2024:21:01:29 +0200] "GET /provincias/ HTTP/1.1" 404 973 http-bio-8080-exec-9 10

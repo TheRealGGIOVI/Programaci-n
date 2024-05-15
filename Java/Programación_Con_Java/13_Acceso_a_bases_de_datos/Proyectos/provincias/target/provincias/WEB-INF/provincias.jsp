@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="modules.Conexion"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Statement"%>
@@ -24,7 +25,27 @@
     Statement consulta = conexion.createStatement();
     ResultSet resultado = consulta.executeQuery("SELECT * FROM provincia WHERE codCCAA =" + codCCAA + " ;");
     %>
-    
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%
+          while(resultado.next()) {
+            out.println("<tr>");
+            out.println("<td>" +resultado.getString("nomProv") +"</td>");
+            out.println("<td></td>");
+            out.println("<td>Editar</td>");
+            out.println("<td><a href=\"borrarProvincia.jsp?cod=" +resultado.getString("codProv")"\"></a></td>");
+          }
+          %>
+        </tbody>
+      </table>
     <%
     //Cerramos conexión con base de datos
     conexion.close(); 

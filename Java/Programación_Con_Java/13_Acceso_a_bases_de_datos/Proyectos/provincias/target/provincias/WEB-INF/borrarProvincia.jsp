@@ -24,8 +24,8 @@
 
   //Redirigimos a alguna página JSP a nivel servidor
 
-  // response.setStatus(response.SC_FOUND);    //Establece estado de respuesta HTTP "302 found"
-  // response.setHeader("Location", "http://localhost:8080/provincias" ); //Establecer la cabecera Location en la respuesta HTTP con la URL a la que
+  response.setStatus(response.SC_FOUND);    //Establece estado de respuesta HTTP "302 found"
+  response.setHeader("Location", "http://localhost:8080/provincias" ); //Establecer la cabecera Location en la respuesta HTTP con la URL a la que
 
   //Forma 2: Realizamos una dirección HTTP al navegador del cliente de forma más simplificada
   response.sendRedirect("http://localhost:8080/provincias");
